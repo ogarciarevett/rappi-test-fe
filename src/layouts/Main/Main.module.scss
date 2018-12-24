@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.Main {
+  background: $lightGrey;
+}
+.container {
+  min-height: 88vh;
+  padding: 46px 10vw;
+  display: flex;
+  margin: 0;
+}

@@ -1,0 +1,90 @@
+@import "../../styles/variables.scss";
+
+.Details {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  padding: $x2SeparationMargin;
+  color: $darkText;
+
+  .detailsProduct {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-right: $separationMargin;
+  }
+
+  .detailsInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descriptionTitle {
+    margin-top: $separationMargin;
+    font-size: 28px;
+  }
+
+  .description {
+    color: $grey;
+  }
+
+  .conditions {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: $separationMargin;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: $x2SeparationMargin;
+  }
+
+  .detailsPrice {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: $x2SeparationMargin;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 23px;
+      top: 4px;
+    }
+  }
+
+  .buyBtn {
+    padding: 16px 32px;
+    background: $buttonBg;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.detailsPicture {
+  width: 680px;
+  height: auto;
+}
+
+@media only screen and (max-width: $minimalMQ) {
+  .detailsPicture {
+    width: 100%;
+  }
+
+  .Details {
+    display: block;
+    .detailsProduct {
+      flex-basis: 100%;
+    }
+  }
+}
